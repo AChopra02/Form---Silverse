@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SILVERSKILLS Pvt. Ltd. - Free Cab Services</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Silverskills Pvt. Ltd</h1>
+        <p>Location: Udyog Vihar Phase 3, Sector 20</p>
+        <form id="cabServiceForm">
+            <label for="employeeName">Full Name:</label>
+            <input type="text" id="employeeName" name="employeeName" required>
+            
+            <label for="employeeID">Employee ID:</label>
+            <input type="text" id="employeeID" name="employeeID" required>
+
+            <label for="dropLocation">Pick-Up Location:</label>
+            <select id="dropLocation" name="dropLocation">
+                <option value="Cybercity">Cybercity</option>
+                <option value="Sikanderpur Metro Station">Sikanderpur Metro Station</option>
+            </select>
+            
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required>
+            
+            <label for="servicesRequired">Services Required From:</label>
+            <input type="month" id="servicesRequired" name="servicesRequired" required>
+	    <br>
+	    <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="links-container">
+        <a href="https://www.silverskills.com/" target="_blank">🌐</a>
+        <a href="https://www.linkedin.com/company/silverskills/?originalSubdomain=in" target="_blank">in</a>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
